@@ -24,12 +24,12 @@
 
 <!-- Begin "Player Select" Layout -->
 
-		<div class="row">
+		<div id="player-select-panel" class="row">
 
 			<div class="col-md-1"></div>
 
 			<div class="col-md-10">
-				<div id="player-select-panel" class="panel panel-default">
+				<div class="panel panel-default">
 					<div class="panel-heading text-center">
 						<h2>Select Your Knight</h2>
 					</div>
@@ -37,17 +37,20 @@
 					<div class="panel-body">
 						
 						<div class="row">
-							<div class="col-md-3">
-								<img src="assets/images/galahad.png">
+							<div id="player-select-0" class="player-select-box col-md-3 text-center">
+								error
 							</div>
-							<div class="col-md-3">
-								<img src="http://via.placeholder.com/150x150">
+
+							<div id="player-select-1" class="player-select-box col-md-3 text-center">
+								error
 							</div>
-							<div class="col-md-3">
-								<img src="http://via.placeholder.com/150x150">
+
+							<div id="player-select-2" class="player-select-box col-md-3 text-center">
+								error
 							</div>
-							<div class="col-md-3">
-								<img src="http://via.placeholder.com/150x150">
+
+							<div id="player-select-3" class="player-select-box col-md-3 text-center">
+								error
 							</div>
 						</div>
 
@@ -61,12 +64,12 @@
 
 <!-- Begin "Opponent Select" Layout -->
 
-		<div class="row">
+		<div id="opponent-select-panel" class="row">
 
 			<div class="col-md-1"></div>
 
 			<div class="col-md-10">
-				<div id="opponent-select-panel" class="panel panel-default">
+				<div class="panel panel-default">
 					<div class="panel-heading text-center">
 						<h2>Select Your Opponent</h2>
 					</div>
@@ -74,9 +77,17 @@
 					<div class="panel-body">
 						
 						<div class="row">
-							<div class="col-md-4">One</div>
-							<div class="col-md-4">Two</div>
-							<div class="col-md-4">Three</div>
+							<div id="opponent-select-0" class="opponent-select-box col-md-4 text-center">
+								error
+							</div>
+
+							<div id="opponent-select-1" class="opponent-select-box col-md-4 text-center">
+								error
+							</div>
+
+							<div id="opponent-select-2" class="opponent-select-box col-md-4 text-center">
+								error
+							</div>
 						</div>
 
 					</div>
@@ -87,28 +98,111 @@
 
 		</div>
 
-<!-- Begin "Opponent Select" Layout -->
+<!-- Begin "Battle" Layout -->
 
-		<div class="row">
+		<div id="battle-panel" class="row">
 
 			<div class="col-md-1"></div>
 
 			<div class="col-md-10">
-				<div id="battle-panel" class="panel panel-default">
+				<div class="panel panel-default">
+					
+					<div class="panel-heading text-center">
+						<h2>Battle!</h2>
+					</div>
+
 					<div class="panel-body">
 						
 						<div class="row">
-							<div class="col-md-5">Player Pic</div>
-							<div class="col-md-2 text-center">VS</div>
-							<div class="col-md-5 text-right">Opponent Pic</div>
+							<div id="player-image" class="col-md-4 text-center">Player Pic</div>
+							<div class="col-md-4 text-center"><h1>VS</h1></div>
+							<div id="defender-image" class="col-md-4 text-center">Opponent Pic</div>
 						</div>
 
 						<div class="row">
-							<div class="col-md-4">Player Stats</div>
-							<div class="col-md-4 text-center">Attack Button</div>
-							<div class="col-md-4 text-right">Opponent Stats</div>
+							<div class="col-md-4 text-center">
+								<h1 id="player-name">Player Stats</h1>
+								<h2 id="player-hp">HP</h2>
+							</div>
+
+							<div class="col-md-4 text-center">
+								<button id="attack-button" type="button" class="btn btn-danger">
+								Attack
+								</button>
+							</div>
+
+							<div class="col-md-4 text-center">
+								<h1 id="opponent-name">Opponent Stats</h1>
+								<h2 id="opponent-hp">HP</h2>
+							</div>
 						</div>
 
+					</div>
+
+					<div class="panel-footer text-center">
+						<h3 id="battle-output">Battle Output!</h3>
+						
+						<button id="next-opponent-button" type="button" class="btn btn-danger">
+							Continue
+						</button>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-md-1"></div>
+
+		</div>
+
+		<!-- Begin "victory-panel" Layout -->
+
+		<div id="victory-panel" class="row">
+
+			<div class="col-md-1"></div>
+
+			<div class="col-md-10">
+				<div class="panel panel-default">
+					<div class="panel-heading text-center">
+						<h2>You are Victorious!</h2>
+					</div>
+
+					<div class="panel-body text-center">
+						
+						<p>Victory Text Goes Here!</p>
+
+						<button type="button" class="restart-button btn btn-danger">
+							Restart
+						</button>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-1"></div>
+
+		</div>
+
+		<!-- Begin "Defeat Panel" Layout -->
+
+		<div id="defeat-panel" class="row">
+
+			<div class="col-md-1"></div>
+
+			<div class="col-md-10">
+				<div class="panel panel-default">
+					<div class="panel-heading text-center">
+						<h2>You are Defeated!</h2>
+					</div>
+
+					<div class="panel-body text-center">
+						
+						<p>Defeat Text Goes Here!</p>
+
+						<button type="button" class="restart-button btn btn-danger">
+							Restart
+						</button>
+						
 					</div>
 				</div>
 			</div>
