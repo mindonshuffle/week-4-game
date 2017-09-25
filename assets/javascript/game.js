@@ -91,7 +91,7 @@ function drawScreen(){
 			//Fills each column with HTML snippet for each knight
 			for(i = 0; i < knights.length; i++){
 				$('#player-select-' +i).html(
-					'<img src="assets/images/'+knights[i].name+'.png"><h2>'+knights[i].name+'</h2><h3>'+knights[i].hp+'</h3>'
+					'<img class="knight-portrait" src="assets/images/'+knights[i].name+'.png"><h2>'+knights[i].name+'</h2><h3>'+knights[i].hp+'</h3>'
 				);
 			}
 
@@ -115,7 +115,7 @@ function drawScreen(){
 				}
 
 				$('#opponent-select-' +i).html(
-					'<img src="assets/images/'+knights[i].name+'.png"><h2>'+knights[i].name+'</h2><h3>'+knights[i].hp+'</h3>'
+					'<img class="knight-portrait" src="assets/images/'+knights[i].name+'.png"><h2>'+knights[i].name+'</h2><h3>'+knights[i].hp+'</h3>'
 				);
 			}
 
@@ -137,14 +137,14 @@ function drawScreen(){
 			}
 
 			$('#player-image').html(
-					'<img src="assets/images/'+player.name+'.png">'
+					'<img class="knight-portrait" src="assets/images/'+player.name+'.png">'
 				);
 			$('#player-name').text(player.name);
 			$('#player-hp').text(player.hp);
 
 
 			$('#defender-image').html(
-					'<img src="assets/images/'+knights[defenderIndex].name+'.png">'
+					'<img class="knight-portrait" src="assets/images/'+knights[defenderIndex].name+'.png">'
 				);
 			$('#opponent-name').text(knights[defenderIndex].name);
 			$('#opponent-hp').text(knights[defenderIndex].hp);
@@ -258,6 +258,13 @@ Initialize:
 
 	"Through your prowess at arms, you have defeated X Y and Z and recovered the Holy Grail for Camelot."
 
+Notes:
+
+Replace placeholder texts
+Update styling
+Adjust knight stats to improve gameplay
+Add "-defeated" images
+**Make game wait for "Continue" before Loss or Victory screen**
 
 */
 

@@ -3,9 +3,40 @@
 }
 
 .panel{
-	border: 4px solid gold;
+	border: 8px solid gold;
 }
 
 .titlebar{
+	color: gold;
 	padding: 35px;
+}
+
+body{
+	background-color: brown;
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+   font-family: 'MedievalSharpBold'; 
+   font-weight: bold; 
+   font-style: normal;
+}
+
+.panel{
+
+	background-image: url("../images/panel-background.png")
+
+}
+
+.knight-portrait{
+
+		width: 150px;
+		border: 5px solid gold;
+
+}
+
+.panel-heading{
+		background-image: url("../images/panel-background.png");
+}
+
+.panel-footer{
+		background-image: url("../images/panel-background.png");
 }
