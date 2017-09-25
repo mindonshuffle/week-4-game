@@ -14,17 +14,17 @@ function Knight(name, hp, attack, counterattack, isPlayer, isDefender) {
   this.hp = hp;
   this.attack = attack;
   this.counterattack = counterattack;
-  this.isPlayer = isPlayer;
-  this.isDefender = isDefender;
+  // this.isPlayer = isPlayer;
+  // this.isDefender = isDefender;
 }
 
 //set knights back to initial state, restart game mode, hides win/loss panels
 function initialize(){
 	knights = [];
-	knights[0] = new Knight('Lancelot', 100, 10, 10, false, false);
-	knights[1] = new Knight('Galahad', 30, 10, 10, false, false);
-	knights[2] = new Knight('Kay', 110, 10, 10, false, false);
-	knights[3] = new Knight('Gawain', 100, 10, 10, false, false);
+	knights[0] = new Knight('Lancelot', 100, 10, 10);
+	knights[1] = new Knight('Galahad', 30, 10, 10);
+	knights[2] = new Knight('Kay', 110, 10, 10);
+	knights[3] = new Knight('Gawain', 100, 10, 10);
 
 	knightsDefeated = 0;
 
