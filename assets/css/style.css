@@ -5,3 +5,7 @@
 .panel{
 	border: 4px solid gold;
 }
+
+.titlebar{
+	padding: 35px;
+}

@@ -26,7 +26,7 @@ function initialize(){
 	knights[2] = new Knight('Kay', 110, 10, 10, false, false);
 	knights[3] = new Knight('Gawain', 100, 10, 10, false, false);
 
-	var knightsDefeated = 0;
+	knightsDefeated = 0;
 
 	gameMode = "playerSelect";
 
@@ -214,6 +214,7 @@ $('#attack-button').on("click", function(){
 
 $('#next-opponent-button').on("click", function(){
 	
+	$('#battle-output').text('');
 	gameMode = 'opponentSelect';
 	drawScreen();
 
@@ -256,10 +257,6 @@ Initialize:
 
 
 	"Through your prowess at arms, you have defeated X Y and Z and recovered the Holy Grail for Camelot."
-
-
-NOTES TO SELF: Reset currently not fully restarting, some counters remain; player victorious after one battle following prior victory
-	CONSOLE LOG ALL VARIABLES AFTER EACH BATTLE
 
 
 */
