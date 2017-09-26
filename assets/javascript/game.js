@@ -21,10 +21,10 @@ function Knight(name, hp, attack, counterattack, isPlayer, isDefender) {
 //set knights back to initial state, restart game mode, hides win/loss panels
 function initialize(){
   knights = [];
-  knights[0] = new Knight('Lancelot', 160, 5, 35);
-  knights[1] = new Knight('Galahad', 100, 15, 40);
-  knights[2] = new Knight('Kay', 125, 8, 30);
-  knights[3] = new Knight('Gawain', 90, 25, 55);
+  knights[0] = new Knight('Lancelot', 160, 5, 15);
+  knights[1] = new Knight('Galahad', 100, 15, 20);
+  knights[2] = new Knight('Kay', 125, 8, 10);
+  knights[3] = new Knight('Gawain', 90, 25, 25);
 
   knightsDefeated = 0;
 
@@ -43,9 +43,14 @@ function initialize(){
 //performs attack and couterattack calculations, checks win/lose conditions
 function attackRound(){
 
+//player attacks
   knights[defenderIndex].hp -= player.attack;
   $('#battle-output').text('You attack '+knights[defenderIndex].name +' for ' +player.attack +' damage!');
   player.attack += player.attack;
+
+//defender attacks
+   player.hp -= knights[defenderIndex].counterattack;
+    $('#battle-output').append('<h3>' + knights[defenderIndex].name + ' hits back for ' + knights[defenderIndex].counterattack + ' damage!</h3>');
 
   if(knights[defenderIndex].hp < 1){
       knights[defenderIndex].hp = 0;
@@ -54,8 +59,7 @@ function attackRound(){
   }
 
   else{
-    player.hp -= knights[defenderIndex].counterattack;
-    $('#battle-output').append('<h3>' + knights[defenderIndex].name + ' hits back for ' + knights[defenderIndex].counterattack + ' damage!</h3>');
+   
   }
 
   if(player.hp < 1){
