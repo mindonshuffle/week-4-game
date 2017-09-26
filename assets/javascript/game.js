@@ -21,17 +21,21 @@ function Knight(name, hp, attack, counterattack, isPlayer, isDefender) {
 //set knights back to initial state, restart game mode, hides win/loss panels
 function initialize(){
   knights = [];
-  knights[0] = new Knight('Lancelot', 100, 10, 10);
-  knights[1] = new Knight('Galahad', 30, 10, 10);
-  knights[2] = new Knight('Kay', 110, 10, 10);
-  knights[3] = new Knight('Gawain', 100, 10, 10);
+  knights[0] = new Knight('Lancelot', 160, 5, 35);
+  knights[1] = new Knight('Galahad', 100, 15, 40);
+  knights[2] = new Knight('Kay', 125, 8, 30);
+  knights[3] = new Knight('Gawain', 90, 25, 55);
 
   knightsDefeated = 0;
 
   gameMode = "playerSelect";
 
+  $('#battle-output').html('');
+
   $('#victory-panel').hide();
   $('#defeat-panel').hide();
+
+  console.log(knights);
 
   drawScreen();
 }
@@ -115,7 +119,7 @@ function drawScreen(){
         }
 
         $('#opponent-select-' +i).html(
-          '<img class="knight-portrait" src="assets/images/'+knights[i].name+'.png"><h2>'+knights[i].name+'</h2><h3>'+knights[i].hp+'</h3>'
+          '<img class="knight-portrait" src="assets/images/'+knights[i].name.toLowerCase()+'-portrait.png"><h2>'+knights[i].name+'</h2><h3>'+knights[i].hp+'</h3>'
         );
       }
 
@@ -137,22 +141,17 @@ function drawScreen(){
       }
 
       $('#player-image').html(
-          '<img class="knight-portrait" src="assets/images/'+player.name+'.png">'
+          '<img class="knight-portrait" src="assets/images/'+player.name.toLowerCase() +'-portrait.png">'
         );
       $('#player-name').text(player.name);
       $('#player-hp').text(player.hp);
 
-
       $('#defender-image').html(
-          '<img class="knight-portrait" src="assets/images/'+knights[defenderIndex].name+'.png">'
+          '<img class="knight-portrait" src="assets/images/'+knights[defenderIndex].name.toLowerCase() +'-portrait.png">'
         );
       $('#opponent-name').text(knights[defenderIndex].name);
       $('#opponent-hp').text(knights[defenderIndex].hp);
-
-      //Win/Loss Check
-
-      
-
+  
       break;    
 
     case "victory":
@@ -176,7 +175,6 @@ function drawScreen(){
 
 initialize();
 
-console.log(knights);
 
 
 //When Player Select knight is clicked, selected knight object is assigned to Player and removed from Knights array
@@ -185,7 +183,7 @@ $('.player-select-box').on("click", function(){
   player = (knights[this.id[14]]);
   knights.splice([this.id[14]], 1);
 
-  console.log('Player: ' +player.name);
+  // console.log('Player: ' +player.name);
 
   gameMode = "opponentSelect";
   drawScreen();
@@ -202,7 +200,7 @@ $('.opponent-select-box').on("click", function(){
 
   gameMode = "battle";
 
-  console.log("Defender: " +knights[defenderIndex].name);
+  // console.log("Defender: " +knights[defenderIndex].name);
   drawScreen();
 });
 

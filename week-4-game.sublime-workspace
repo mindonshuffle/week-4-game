@@ -4,12 +4,44 @@
 		"selected_items":
 		[
 			[
-				"Name",
-				"name"
+				"lock",
+				"lockState"
 			],
 			[
-				"z",
-				"z-index"
+				"T",
+				"getTuneUp"
+			],
+			[
+				"H",
+				"Honk"
+			],
+			[
+				"W",
+				"Woohoo"
+			],
+			[
+				"ca",
+				"car"
+			],
+			[
+				"car",
+				"Car"
+			],
+			[
+				"multiplier",
+				"multiplierReturnCall"
+			],
+			[
+				"p",
+				"p\tTag"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"margin",
+				"margin-bottom"
 			]
 		]
 	},
@@ -19,7 +51,8 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 5230,
+				"buffer_size": 5391,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -28,6 +61,15 @@
 			"settings":
 			{
 				"buffer_size": 592,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/javascript/game.js",
+			"settings":
+			{
+				"buffer_size": 6839,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -39,31 +81,35 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "rein",
+		"height": 490.0,
+		"last_filter": "ind",
 		"selected_items":
 		[
 			[
-				"rein",
+				"ind",
 				"Indentation: Reindent Lines"
 			],
 			[
-				"rei",
-				"Indentation: Reindent Lines"
+				"install",
+				"Package Control: Install Package"
 			],
 			[
-				"package",
+				"package con",
+				"Package Control: Install Package"
+			],
+			[
+				"package control inst",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 412.0
+		"width": 565.0
 	},
 	"console":
 	{
-		"height": 126.0,
+		"height": 162.0,
 		"history":
 		[
-			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
 	"distraction_free":
@@ -77,44 +123,101 @@
 	},
 	"expanded_folders":
 	[
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/week-4-game",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/week-4-game/assets",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/week-4-game/assets/css",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/week-4-game/assets/javascript"
 	],
 	"file_history":
 	[
-		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/week-4-game/README.md",
-		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/week-4-game/assets/javascript/game.js",
-		"/C/Users/thesc/Documents/bootcamp-content/Homework/jQuery Homework/Instructions/homework_instructions.md",
-		"/C/Users/thesc/Documents/bootcamp-content/Homework/02-Homework/Bootstrap-Portfolio/assets/css/style.css",
-		"/C/Users/thesc/Documents/bootcamp-content/Homework/02-Homework/Bootstrap-Portfolio/portfolio.html",
-		"/C/Users/thesc/Documents/bootcamp-content/Homework/02-Homework/Bootstrap-Portfolio/index.html",
-		"/C/Users/thesc/Documents/bootcamp-content/Homework/02-Homework/Bootstrap-Portfolio/contact.html",
-		"/C/Users/thesc/Documents/bootcamp-content/Homework/02-Homework/Responsive-Portfolio/index.html",
-		"/C/Users/thesc/Documents/bootcamp-content/Homework/02-Homework/Responsive-Portfolio/portfolio.html",
-		"/C/Users/thesc/Documents/bootcamp-content/Homework/02-Homework/Responsive-Portfolio/contact.html",
-		"/C/Users/thesc/Documents/bootcamp-content/Homework/02-Homework/Responsive-Portfolio/assets/css/style.css",
-		"/C/Users/thesc/Documents/bootcamp-content/Homework/02-Homework/Responsive-Portfolio/README.md",
-		"/C/Users/thesc/Documents/bootcamp-content/Basic-Portfolio/index.html",
-		"/C/Users/thesc/Documents/bootcamp-content/Basic-Portfolio/assets/css/reset.css",
-		"/C/Users/thesc/Documents/bootcamp-content/Basic-Portfolio/portfolio.html",
-		"/C/Users/thesc/Documents/bootcamp-content/Basic-Portfolio/contact.html",
-		"/C/Users/thesc/Documents/bootcamp-content/Basic-Portfolio/assets/css/style.css",
-		"/C/Users/thesc/Documents/bootcamp-content/Basic-Portfolio/Instructions/recommended-homework-assignment.md",
-		"/C/Users/thesc/Documents/bootcamp-content/Basic-Portfolio/Instructions/easier-homework-assignment.md",
-		"/C/Users/thesc/Desktop/PREWORK_SAF/Module-10/javascript.js",
-		"/C/Users/thesc/Desktop/PREWORK_SAF/Module-10/demo w js.html",
-		"/C/Users/thesc/Desktop/PREWORK_SAF/Module-10/index.html",
-		"/C/Users/thesc/Desktop/PREWORK_SAF/Module-8/fanpage.html",
-		"/C/Users/thesc/Desktop/PREWORK_SAF/Module-8/my_first_website.html",
-		"/C/Users/thesc/Desktop/PREWORK_SAF/Broken_and_Working_Code - Copy/BrokenCode/BooTheDog.html",
-		"/C/Users/thesc/Desktop/PREWORK_SAF/Broken_and_Working_Code - Copy/BrokenCode/logic.js",
-		"/C/Users/thesc/Desktop/PREWORK_SAF/Broken_and_Working_Code/BrokenCode/BooTheDog.html",
-		"/C/Users/thesc/Desktop/PREWORK_SAF/Broken_and_Working_Code/BrokenCode/logic.js",
-		"/C/Users/thesc/Desktop/PREWORK_SAF/Broken_and_Working_Code/BrokenCode/style.css",
-		"/C/Users/thesc/Desktop/PREWORK_SAF/Broken_and_Working_Code/WorkingCode/GrumpyCat.html",
-		"/C/Users/thesc/Desktop/PREWORK_SAF/Broken_and_Working_Code/WorkingCode/logic.js"
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/04-jquery/01-Activities/20-jQueryCalculator/README.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/04-jquery/01-Activities/20-jQueryCalculator/Unsolved/jquery-calculator.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/04-jquery/01-Activities/15-ScopeThree/Unsolved/lexical-scope-3-unsolved.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/04-jquery/01-Activities/15-ScopeThree/README.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/04-jquery/01-Activities/13-ScopeOne/README.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/04-jquery/01-Activities/14-ScopeTwo/README.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/04-jquery/01-Activities/14-ScopeTwo/Unsolved/lexical-scope-2-unsolved.html",
+		"/C/Users/thesc/Documents/bootcamp-content/Class Notes/09.21.2017.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/02-javascript/Instructions/homework-instructions.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/02-javascript/Hangman-Game/index2.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/02-javascript/Hangman-Game/canvastest.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/02-javascript/Hangman-Game/index.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/32-CarGame/README.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/32-CarGame/car.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/32-CarGame/Solved/car-game-solved.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/31-MyFirstObject/README.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/31-MyFirstObject/Unsolved/car-object-unsolved.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/30-GandalfTheGreyObjects/gandalf-the-grey-objects.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/bonus-01-logit - Copy/logit-1-arrays.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/27-MyFirstFunctions/README.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/27-MyFirstFunctions/Unsolved/my-first-functions-unsolved.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/26-SuperheroLogging/superhero-logging-solved-no-functions.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/26-SuperheroLogging/superhero-logging-solved-with-functions.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/21-Events/events-examples.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/23-RPS-Coded/README.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/23-RPS-Coded/Unsolved/rps-2.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Temp/rps-1.html",
+		"/C/Users/thesc/Documents/bootcamp-content/Class Notes/09.19.2017.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/20-HardLoop/README.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/19-AnotherLoop/loop.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/19-AnotherLoop/anotherloop.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/19-AnotherLoop/README.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/10-ConditionalActivity2/conditional-demo-2.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/18-ZooLoop/Unsolved/zoo-loop-unsolved.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/18-ZooLoop/README.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/17-MyFirstLoop/README.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/17-MyFirstLoop/my-first-loop.html",
+		"/C/Users/thesc/Documents/bootcamp-content/Class Notes/09.18.2017.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/02-Homework/Bootstrap-Portfolio/index.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/02-Homework/Bootstrap-Portfolio/portfolio.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/02-Homework/Bootstrap-Portfolio/contact.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/02-Homework/Bootstrap-Portfolio/portfolio-2.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/02-Homework/Bootstrap-Portfolio/assets/css/style.css",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/03-PizzaVariables/Unsolved/pizza-variables.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/03-PizzaVariables/README.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/02-BasicVariablesDemo/basic-variables-demo.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/01-CodeDissection/js-dissect.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/01-Basic-Portfolio/assets/css/style.css",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/02-Homework/Responsive-Portfolio/portfolio.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/16-PanelLayout/README.md",
+		"/C/Users/thesc/Documents/bootcamp-content/Class Notes/09.15.2017.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/02-Homework/Responsive-Portfolio/index.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Homework/02-Homework/Responsive-Portfolio/assets/css/style.css",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/18-StudentMedia/Unsolved/css/style.css",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/18-StudentMedia/Unsolved/media-unsolved.html",
+		"/C/Users/thesc/Documents/bootcamp-content/Class Notes/.CommonSnips.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/16-PanelLayout/mine2.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/14-TextLayout/README.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/14-TextLayout/Solved/mine.html",
+		"/C/Users/thesc/Documents/bootcamp-content/Class Notes/09.14.2017.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/11-Bootstrap Demo/Unsolved/bootstrap-buttons.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/07-CSSTypography/README.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/07-CSSTypography/style.css",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/07-CSSTypography/fonts.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/06-GithubPagesProject/index.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Basic-Portfolio/assets/css/style.css",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Basic-Portfolio/index.html",
+		"/C/Users/thesc/Documents/bootcamp-content/09-11-2017-NWCHI-Class-Repository-FSF/01-Class-Content/02-css-bootstrap/01-Activities/07-CSSTypography/Unsolved/html-template.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Class Activites/04-ResetCSS/Unsolved/example.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Basic-Portfolio/contact.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/11-CSS_Positioned_Activity/Unsolved/positioning.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/11-CSS_Positioned_Activity/Unsolved/positioning.css",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/11-CSS_Positioned_Activity/Solved/positioning.css",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Basic-Portfolio/Instructions/recommended-homework-assignment.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Basic-Portfolio/portfolio.html",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/Basic-Portfolio/assets/css/reset.css",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/09-FloatLayout-Activity/README.md",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/09-FloatLayout-Activity/Unsolved/floats.css",
+		"/C/Users/thesc/Documents/bootcamp-content/gitlab-assignments/09-FloatLayout-Activity/Unsolved/floats.html",
+		"/C/Users/thesc/code/week1-day2-html-css/css/student-bio.html",
+		"/C/Users/thesc/code/first-day-stuff-1/index.html",
+		"/C/Users/thesc/Documents/CSS Exercise/chocolate.html",
+		"/C/Users/thesc/Documents/CSS Exercise/index.html",
+		"/C/Users/thesc/Documents/CSS Exercise/style.css"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 53.0
 	},
 	"find_in_files":
 	{
@@ -128,6 +231,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"console",
+			"tes",
+			"test"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -145,12 +251,7 @@
 	"groups":
 	[
 		{
-			"sheets":
-			[
-			]
-		},
-		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -159,15 +260,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5230,
+						"buffer_size": 5391,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								937,
+								937
 							]
 						],
 						"settings":
@@ -176,10 +277,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1464.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -205,10 +306,40 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 336.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/javascript/game.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6839,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								956,
+								956
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 864.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -216,11 +347,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 51.0
 	},
 	"layout":
 	{
@@ -231,18 +362,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.501761597181,
 			1.0
 		],
 		"rows":
@@ -260,7 +384,7 @@
 	"project": "week-4-game.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 63.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -298,7 +422,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 217.0,
+	"side_bar_width": 273.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
